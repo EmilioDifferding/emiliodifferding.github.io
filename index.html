@@ -1,30 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/f0c4cf9a7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <meta Content-Type="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilio Differding</title>
 </head>
+
 <body>
-    <header>
-        <p class="scode">Emilio Differding | Web Developer | IoT Developer</p>
-        <nav>
-            <ul>
-                <li>Trabajos</li>
-                <li>Acerca de mi</li>
-                <li>Contáctame</li>
-            </ul>
+    <header class="main-header">
+        <nav class="navbar is-fixed-top pt-5
+        pl-3 pr-3" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="assets/logo.svg" class="logo">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start pl-6">
+                    <a href="#jobs" class="navbar-item">
+                        Trabajos
+                    </a>
+
+                    <a href="#about" class="navbar-item">
+                        Acerca
+                    </a>
+
+                </div>
+
+                <div class="navbar-end">
+                    <ul class="social-icons navbar-item">
+                        <li class="social-icons__item">
+                            <a href="https://t.me/ediffer" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="https://github.com/emiliodifferding" target='blank'><i class="fab fa-github"
+                                    target='blank'></i></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="https://wa.me/5493454260467" target='blank'><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
-    <section>
-        <p>Hola, soy Emilio Differding.</p>
-        <p>Me dedico a <span id="dedications">diseñar sistemas web</span></p>
+    <section class="section hero-section">
+        <div class="container">
+            <div class="hero">
+                <div class="columns">
+                    <div class="hero-text column">
+                        <h1 class="hero-text__title title is-1">Desarrollador web Full Stack</h1>
+                        <h2 class="hero-text__subtitle subtitle">Creo sitios web de calidad enfocados en el usuario.
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <div class="hero-image ">
+                                <img src="assets/hero-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-center">
+                    <div class="arrow-container column has-text-centered">
+                        <a href="#skills">
+                            <img src="assets/arrow-down.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
+    <section class="section skills-section" id="skills">
+        <h2 class="title is-1 has-text-centered has-text-white pb-6 pt-2">Mi dedicación</h2>
+        <div class="columns is-centered is-multiline">
+            <div class="card column is-4 ">
+                <div class="card-content">
+                    <h2 class="title is-3 has-text-centered">Fornt End</h2>
+                    <p class="has-text-centered content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                        asperiores.</p>
+                    
+                    <p> <i class="fas fa-arrow-right"></i> Disfruto diseñar: UI - Web - Mobile - Web Components</p>
+                
+                    <p><i class="fas fa-arrow-right"></i> Trabajo con: Photoshop. Illustrator, Papel y Lápiz, VSCode</p>
+                
+                    <p><i class="fas fa-arrow-right"></i> Hablo : CSS, SASS, HTML, Javascript </p>
+                </div>
+            </div>
+
+            <div class="card column is-4  ">
+                <div class="card-content">
+                    <h2 class="title is-3 has-text-centered">Back End</h2>
+                    <p class="has-text-centered content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                        asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    
+                        <p> <i class="fas fa-arrow-right"></i> Puedo crear sistemas web, API’s,  y desarrollo de dispositivos IoT</p>
+                
+                    <p><i class="fas fa-arrow-right"></i> Mis Herramientas: Git, Terminal, Linux, Docker</p>
+                
+                    <p><i class="fas fa-arrow-right"></i> Hablo : Python, PHP, Javascript </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section -section" id="jobs">
+        <div class="cintainer">
+            <div class="columns is-center is-baseline">
+                <div class="column">
+                    <h3 class="title is-3 has-text-centered">Uno de mis trabajos</h3>
+                </div>
+                <div class="column">
+                    <img src="assets/abstract-cloud.svg" alt="">
+                </div>
+            </div>
+
+            <div class="columns is-center job-column">
+                <div class="column">
+                    <div id="img-job-1">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="job-text">
+                        <h4 class="title is-4"> SMC - Un sistema de monitoreo de variables críticas.</h4>
+                        <p>Un sistema empleando variedad de sensores y dispositivos conectados a Internet que miden
+                            variables en procesos críticos y envían los datos para ser visualizados por los usuarios.
+                            También incluye un sistema de alerta muy práctico.<br />
+                            Back end en Python-Flask SQLAlchemy.
+                            Front end en Vuejs y Bulma </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container has-text-centered">
+            <h3 class="title is-1">Acerca de mi</h3>
+            <p>
+                Vivo en Argentina. Amo la programación, el diseño, la naturaleza y las cosas simples. Me gustan los
+                desafíos que pongan a prueba mi creatividad y me motiven a aprender nuevas cosas todos los días.
+            </p>
+            <p>
+                En 2018 comencé mi aventura en el mundo del desarrollo, desde entonces mi objetivo es ayudar a personas
+                y empresas a generar soluciones que impulsen su potencial, ya sea una web institucional, personal, o un
+                sistema de gestión.
+            </p>
+
+            <div class="contact">
+                <p class="has-text-lighter">
+                    ¿Crees que puedo ser útil en tu proyecto? <br />
+                    Comunícate ;)
+                </p>
+                <div class="contact-icons">
+                    <a href="https://t.me/ediffer" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="mailto:emiliodiffer@gmail.com" target='blank'><i class="fas fa-at" target='blank'></i></a>
+                    <a href="https://wa.me/5493454260467" target='blank'><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-bg-primary has-text-white has-text-centered">
+        <p class="copy">
+            Hecho a mano y con <span class=has-text-danger>&heartsuit;</span> por Emilio Differding | 2021 todos los
+            derechos reservados.
+        </p>
+    </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
